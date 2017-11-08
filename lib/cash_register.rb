@@ -1,13 +1,14 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :last_transaction
 
   @@array_of_all_items = []
 
   def initialize(discount = nil)
     @total = 0
     @discount = discount
+    
   end
 
   def add_item(title, price, quantity = 1)
@@ -36,6 +37,8 @@ class CashRegister
 
 end
 
+cash_register = CashRegister.new
+cash_register.add_item("tomato", 1.76)
 # new_register = CashRegister.new
 # new_register.add_item("eggs", 1.99)
 # new_register.add_item("tomato", 1.76, 3)
