@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    @@array_of_all_items << title
+    
     self.total += price * quantity
   end
 
@@ -25,6 +25,7 @@ class CashRegister
   end
 
   def items
+    @@array_of_all_items << self.title
     #get only specific items in array
     #multiple number of items by their quantity
     @@array_of_all_items
