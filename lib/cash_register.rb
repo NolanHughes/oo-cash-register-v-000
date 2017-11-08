@@ -38,10 +38,10 @@ require 'pry'
 #
 # end
 
-array_of_all_items = []
+@array_of_all_items = []
 
 def repeat(text, n=2)
-  array_of_all_items << [text] * n * ' '
+  @array_of_all_items << [text] * n * ' '
 end
 
 
