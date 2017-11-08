@@ -8,11 +8,10 @@ class CashRegister
     @discount = discount
   end
   
-  
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
   end
-  
+
   def apply_discount
     if self.discount == nil
       "There is no discount to apply."
