@@ -25,7 +25,7 @@ class CashRegister
   end
 
   def items
-
+    @@array_of_all_items
   end
 end
 
