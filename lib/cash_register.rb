@@ -41,7 +41,7 @@ end
 @@array_of_all_items = []
 
 def repeat(text, n=2)
-  [text] * n * ' '
+  @@array_of_all_items << [text] * n * ' '
 end
 
 repeat("tomato")
