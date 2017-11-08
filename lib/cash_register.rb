@@ -42,15 +42,15 @@ class CashRegister
 end
 
 # @array_of_all_items = []
-# 
+#
 # def repeat(text, n=2)
 #   repeated = [text] * n * ' '
 #   @array_of_all_items << repeated.split
 #   @array_of_all_items.flatten
 # end
-# 
-# 
-# 
+#
+#
+#
 # # cash_register = CashRegister.new
 # # cash_register.add_item("tomato", 1.76)
 # # # new_register = CashRegister.new
