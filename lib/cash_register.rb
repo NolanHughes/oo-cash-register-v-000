@@ -28,7 +28,7 @@ class CashRegister
     end
   end
 
-  #get only specific items in array (from new_register)
+  #get only specific items in array (from new_register not cash_register)
   def items
     @@array_of_all_items.flatten
   end
