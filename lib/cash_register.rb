@@ -38,6 +38,14 @@ class CashRegister
 
 end
 
+@@array_of_all_items = []
+
+def repeat(text, n=2)
+  [text] * n * ' '
+end
+
+repeat("tomato")
+
 # cash_register = CashRegister.new
 # cash_register.add_item("tomato", 1.76)
 # # new_register = CashRegister.new
