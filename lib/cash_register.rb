@@ -9,6 +9,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
+    @@array << title
     self.total += price * quantity
   end
 
@@ -19,6 +20,10 @@ class CashRegister
       @total = total - (total * (discount * 0.01))
       "After the discount, the total comes to $#{total.to_i}."
     end
+  end
+
+  def items
+    @@array = []
   end
 end
 
