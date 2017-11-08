@@ -3,7 +3,7 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :last_transaction
 
-  @@array_of_all_items = []
+  
 
   def initialize(discount = nil)
     @total = 0
@@ -12,8 +12,10 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
+    @array_of_all_items = []
+    
     repeated = [title] * quantity * ' '
-    @@array_of_all_items << repeated.split
+    @array_of_all_items << repeated.split
 
     @last_transaction = price
     self.total += price * quantity
