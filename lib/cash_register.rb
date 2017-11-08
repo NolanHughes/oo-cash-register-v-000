@@ -41,7 +41,8 @@ require 'pry'
 @array_of_all_items = []
 
 def repeat(text, n=2)
-  @array_of_all_items << [text] * n * ' '
+  repeated = [text] * n * ' '
+  @array_of_all_items << repeated.split
 end
 
 
