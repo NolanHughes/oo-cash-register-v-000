@@ -28,8 +28,7 @@ class CashRegister
     end
   end
 
-  #get only specific items in array
-  #multiple number of items by their quantity
+  #get only specific items in array (from new_register)
   def items
     @@array_of_all_items.flatten
   end
