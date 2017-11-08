@@ -8,7 +8,7 @@ class CashRegister
   def initialize(discount = nil)
     @total = 0
     @discount = discount
-    
+
   end
 
   def add_item(title, price, quantity = 1)
@@ -32,7 +32,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    
+
   end
 
 end
@@ -43,4 +43,4 @@ cash_register.add_item("tomato", 1.76)
 # new_register.add_item("eggs", 1.99)
 # new_register.add_item("tomato", 1.76, 3)
 #
-# binding.pry
+binding.pry
