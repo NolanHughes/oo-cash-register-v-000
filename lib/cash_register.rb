@@ -13,8 +13,8 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     repeated = [title] * n * ' '
-    @array_of_all_items << repeated.split
-    @array_of_all_items.flatten
+    @@array_of_all_items << repeated.split
+    @@array_of_all_items.flatten
 
     @last_transaction = price
     self.total += price * quantity
