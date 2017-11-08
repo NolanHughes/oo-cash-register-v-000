@@ -38,7 +38,7 @@ require 'pry'
 #
 # end
 
-@array_of_all_items = []
+@array_of_all_items = ''
 
 def repeat(text, n=2)
   repeated = [text] * n * ' '
