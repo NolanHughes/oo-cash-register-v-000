@@ -8,8 +8,6 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-
-
     repeated = [title] * quantity * ' '
     @array_of_all_items << repeated.split
 
