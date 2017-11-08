@@ -16,8 +16,9 @@ class CashRegister
   end
 
   def apply_discount
-    raise ArgumentError
+    
     if args.length > 1
+      raise ArgumentError
       "error"
 
     else
