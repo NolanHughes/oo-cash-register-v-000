@@ -16,7 +16,9 @@ class CashRegister
   end
 
   def apply_discount
-    raise ArgumentError, "Too many arguments" if args.length > 1
+    raise ArgumentError
+    if args.length > 1
+      "error"
 
     else
       @total = total - (total * (discount * 0.01))
