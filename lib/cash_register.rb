@@ -17,3 +17,5 @@ class CashRegister
     total
   end
 end
+
+cash_register_with_discount = CashRegister.new(20)
