@@ -12,7 +12,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    repeated = [title] * n * ' '
+    repeated = [title] * quantity * ' '
     @@array_of_all_items << repeated.split
     @@array_of_all_items.flatten
 
