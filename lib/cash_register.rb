@@ -25,6 +25,8 @@ class CashRegister
   end
 
   def items
+    #get only specific items in array
+    #multiple number of items by their quantity
     @@array_of_all_items
   end
 end
