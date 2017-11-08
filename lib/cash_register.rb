@@ -6,14 +6,15 @@ class CashRegister
   def initialize(discount = nil)
     @total = 0
     @discount = discount
-
-  end
-
-  def add_item(title, price, quantity = 1)
+    
     @array_of_all_items = []
 
     repeated = [title] * quantity * ' '
     @array_of_all_items << repeated.split
+  end
+
+  def add_item(title, price, quantity = 1)
+
 
     @last_transaction = price
     self.total += price * quantity
