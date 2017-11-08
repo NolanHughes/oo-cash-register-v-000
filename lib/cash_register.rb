@@ -1,3 +1,5 @@
+require 'pry'
+
 class CashRegister
   attr_accessor :total
 
@@ -19,3 +21,5 @@ class CashRegister
 end
 
 cash_register_with_discount = CashRegister.new(20)
+
+binding.pry
