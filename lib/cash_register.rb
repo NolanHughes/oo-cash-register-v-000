@@ -32,7 +32,7 @@ class CashRegister
   #get only specific items in array
   #multiple number of items by their quantity
   def items
-    @@array_of_all_items
+    @@array_of_all_items.flatten
   end
 
   def void_last_transaction
