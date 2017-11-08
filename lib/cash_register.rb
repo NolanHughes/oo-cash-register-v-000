@@ -3,6 +3,8 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount
 
+  @@array_of_all_items = []
+
   def initialize(discount = nil)
     @total = 0
     @discount = discount
@@ -23,7 +25,7 @@ class CashRegister
   end
 
   def items
-    @@array = []
+
   end
 end
 
