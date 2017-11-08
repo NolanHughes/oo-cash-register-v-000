@@ -42,7 +42,8 @@ require 'pry'
 
 def repeat(text, n=2)
   repeated = [text] * n * ' '
-  repeated.split
+  @array_of_all_items << repeated.split
+  @array_of_all_items.flatten
 end
 
 
